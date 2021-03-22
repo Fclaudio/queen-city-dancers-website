@@ -1,0 +1,192 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family:Helvetica;
+  font-weight:600;
+}
+
+:root {
+  --brand-color: #e7717d;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header ul {
+  background-color: var(--brand-color);
+  display: flex;
+  margin: 0;
+  padding: 10px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  background-color: var(--brand-color);
+}
+
+nav div a {
+  color: white;
+  text-decoration: none;
+  font-size: small;
+  margin: 10%;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: small;
+}
+
+ul {
+  margin: 0;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+}
+
+.box {
+  width: 200px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.main_box {
+  width: 60%;
+  margin: 5px;
+  padding: 15px;
+  font-size: large;
+  text-align: justify;
+}
+
+footer{
+  background-color: var(--brand-color);
+  padding: 10px;
+}
+
+footer ul{
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  font-size: small;
+  color: white;
+}
+
+/* Image adjustements */
+
+.logo{
+  max-width: 250px;
+  max-height: 140px;
+}
+
+.social_media_icons{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.dance_image{
+  max-width: 550px;
+  max-height: 350px;
+  margin: 10px;
+}
+
+/* Adjustment classes */
+
+.push_right {
+  margin-left: auto;
+}
+
+.push_left {
+  justify-content: flex-start;
+}
+
+.vertical_line {
+  border-left: 1px solid white;
+  margin: 0 10px;
+  height: 50px;
+}
+
+.horizontal_line {
+  flex-grow: 1;
+  border-top: 2px solid white;
+  margin: auto;
+  width: 98%;
+}
+
+/* Form Adjustmetns */
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 1px;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+input, textarea {
+
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 50px;
+}
+
+.button {
+  padding-left: 155px; 
+}
+
+button {
+  margin-left: 10px;
+}
+
+#form_left {
+  margin-left: -10px;
+  border: 0px;
+
+}
+
+.href_editor {
+  text-decoration: none;
+  color: #000;
+}

@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %>
+<main>
+  <div>
+      <img src= <%=session.image%> alt="dance style image" class="dance_image">
+  </div>
+  <div class="main_box">
+  <section>
+      <h2><%=session.title%>:</h2>
+      <article>
+          <h3>Hosted by <%=session.host%></h3>
+          <p>Date: <%=session.date%></p>
+          <p>Time: From <%=session.start_time%> to <%=session.end_time%></p>
+          <p>Meeting Location: <%=session.meeting_location%></p>
+          <p>Address: <%=session.address%></p>
+      </article>
+  </section>
+  <section>
+      <h2>DETAILS:</h2>
+      <p><%=session.details%></p>
+      <form id="form_left">
+        <button  type="submit" formmethod="GET" formaction ="/available_sessions/<%=session.id%>/edit">EDIT</button>
+        <button  type="submit" formmethod="POST" formaction ="/available_sessions/<%=session.id%>?_method=DELETE">DELETE</button>
+      </form>
+  </section>
+  </div>
+</main>
+  <%- include('../partials/footer.ejs') %>

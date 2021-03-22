@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs') %>
+  <main>
+    <div class="main_box">
+      <%if(danceSessions.length){%>
+        <p>Select from the available dance session</p>
+        <%danceSessions.forEach(session=>{%>
+          <h1><%=session.category%></h1>
+          <%session.sessions.forEach(meeting=>{%>
+            <a href="/available_sessions/<%=meeting.id%>" class="href_editor"><p><%=meeting.title%></p></a>
+          <% })%>
+        <%})
+      } else {%>
+        <p>There are no sessions available</p>
+      <%}%>
+    </div>
+  </main>
+  <%- include('../partials/footer.ejs') %>
